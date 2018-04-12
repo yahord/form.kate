@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE language SYSTEM "language.dtd">
+<language name="FORM" section="Scientific"
+          version="0.1" kateversion="2.4"
+          extensions="*.frm;*.FRM;*.Frm"
+          priority="5">
+<!--
+##########################################################################
+##   by Yahor Dydyshka yahor.dydyshka@cern.ch
+##   and Vitaly Yermolchyk yermolchyk@hep.by
+##########################################################################
+-->
+  <highlighting>
+  	<!-- Reserved words.  -->
+   	<!-- FORM allow abbriviations so they all should be highlighted. 
+ 				 It is unavoidable to list all of them -->	 
+    <list name="statements">
+			<item> a </item>
+			<item> ab </item>
+			<item> abr </item>
+			<item> abra </item>
+			<item> abrac </item>
+			<item> abrack </item>
+			<item> abracke </item>
+			<item> abracket </item>
+			<item> abrackets </item>
+			<item> al </item>
+			<item> als </item>
+			<item> also </item>
+			<item> an </item>
+			<item> ant </item>
+			<item> anti </item>
+			<item> antib </item>
+			<item> antibr </item>
+			<item> antibra </item>
+			<item> antibrac </item>
+			<item> antibrack </item>
+			<item> antibracke </item>
+			<item> antibracket </item>
+			<item> antibrackets </item>
+			<item> antis </item>
+			<item> antisy </item>
+			<item> antisym </item>
+			<item> antisymm </item>
+			<item> antisymme </item>
+			<item> antisymmet </item>
+			<item> antisymmetr </item>
+			<item> antisymmetri </item>
+			<item> antisymmetriz </item>
+			<item> antisymmetrize </item>
+			<item> apply </item>
+			<item> argexplode </item>
+			<item> argimplode </item>
+			<item> argument </item>
+			<item> auto </item>
+			<item> autodeclare </item>
+			<item> b </item>
+			<item> br </item>
+			<item> bra </item>
+			<item> brac </item>
+			<item> brack </item>
+			<item> bracke </item>
+			<item> bracket </item>
+			<item> c </item>
+			<item> cf </item>
+			<item> cfu </item>
+			<item> cfun </item>
+			<item> cfunc </item>
+			<item> cfunct </item>
+			<item> cfuncti </item>
+			<item> cfunctio </item>
+			<item> cfunction </item>
+			<item> cfunctions </item>
+			<item> chainin </item>
+			<item> chainout </item>
+			<item> chisholm </item>
+			<item> cleartable </item>
+			<item> co </item>
+			<item> collect </item>
+			<item> com </item>
+			<item> comm </item>
+			<item> commu </item>
+			<item> commut </item>
+			<item> commuti </item>
+			<item> commutin </item>
+			<item> commuting </item>
+			<item> comp </item>
+			<item> compr </item>
+			<item> compre </item>
+			<item> compres </item>
+			<item> compress </item>
+			<item> contract </item>
+			<item> ct </item>
+			<item> ctable </item>
+			<item> cte </item>
+			<item> cten </item>
+			<item> ctens </item>
+			<item> ctenso </item>
+			<item> ctensor </item>
+			<item> ctensors </item>
+			<item> cy </item>
+			<item> cyc </item>
+			<item> cycl </item>
+			<item> cycle </item>
+			<item> cycles </item>
+			<item> cyclesy </item>
+			<item> cyclesym </item>
+			<item> cyclesymm </item>
+			<item> cyclesymme </item>
+			<item> cyclesymmet </item>
+			<item> cyclesymmetr </item>
+			<item> cyclesymmetri </item>
+			<item> cyclesymmetriz </item>
+			<item> cyclesymmetrize </item>
+			<item> deallocatetable </item>
+			<item> d </item>
+			<item> delete </item>
+			<item> denominators </item>
+			<item> di </item>
+			<item> dim </item>
+			<item> dime </item>
+			<item> dimen </item>
+			<item> dimens </item>
+			<item> dimensi </item>
+			<item> dimensio </item>
+			<item> dimension </item>
+			<item> dis </item>
+			<item> disc </item>
+			<item> disca </item>
+			<item> discar </item>
+			<item> discard </item>
+			<item> disorder </item>
+			<item> drop </item>
+			<item> dropcoefficient </item>
+			<item> else </item>
+			<item> elseif </item>
+			<item> endargument </item>
+			<item> endif </item>
+		  <item> endinexpression </item>
+			<item> endinside </item>
+			<item> endrepeat </item>
+			<item> endterm </item>
+			<item> endwhile </item>
+			<item> exit </item>
+			<item> factarg </item>
+			<item> fi </item>
+			<item> fill </item>
+			<item> fillexpression </item>
+			<item> fix </item>
+			<item> fixi </item>
+			<item> fixin </item>
+			<item> fixind </item>
+			<item> fixinde </item>
+			<item> fixindex </item>
+			<item> fo </item>
+			<item> for </item>
+			<item> form </item>
+			<item> forma </item>
+			<item> format </item>
+			<item> f </item>			
+			<item> fu </item>
+			<item> fun </item>
+			<item> func </item>
+			<item> funct </item>
+			<item> functi </item>
+			<item> functio </item>
+			<item> function </item>
+			<item> functions </item>
+			<item> funpowers </item>
+			<item> g </item>
+			<item> gl </item>
+			<item> glo </item>
+			<item> glob </item>
+			<item> globa </item>
+			<item> global </item>
+			<item> go </item>
+			<item> got </item>
+			<item> goto </item>
+			<item> hide </item>
+			<item> i </item>
+			<item> id </item>
+			<item> ide </item>
+			<item> iden </item>
+			<item> ident </item>
+			<item> identi </item>
+			<item> identif </item>
+			<item> identify </item>
+			<item> idn </item>
+			<item> idne </item>
+			<item> idnew </item>
+			<item> ido </item>
+			<item> idol </item>
+			<item> idold </item>
+			<item> if </item>
+			<item> ifmatch </item>
+			<item> ifnomatch </item>			
+			<item> in </item>
+			<item> ind </item>
+			<item> inde </item>
+			<item> index </item>
+			<item> indi </item>
+			<item> indic </item>
+			<item> indice </item>
+			<item> indices </item>
+			<item> inexpression </item>
+			<item> inparallel </item>
+			<item> inside </item>
+			<item> insidefirst </item>
+			<item> intohide </item>
+			<item> keep </item>
+			<item> l </item>
+			<item> la </item>
+			<item> lab </item>
+			<item> labe </item>
+			<item> label </item>
+			<item> lo </item>
+			<item> loa </item>
+			<item> load </item>
+			<item> loc </item>
+			<item> loca </item>
+			<item> local </item>
+			<item> m </item>
+			<item> makeinteger </item>
+			<item> many </item>
+			<item> merge </item>
+			<item> metric </item>
+			<item> mo </item>
+			<item> mod </item>
+			<item> modu </item>
+			<item> modul </item>
+			<item> moduleoption </item>
+			<item> modulu </item>
+			<item> modulus </item>
+			<item> mu </item>
+			<item> mul </item>
+			<item> mult </item>
+			<item> multi </item>
+			<item> multip </item>
+			<item> multipl </item>
+			<item> multiply </item>
+			<item> n </item>
+			<item> ndrop </item>
+			<item> nf </item>
+			<item> nfu </item>
+			<item> nfun </item>
+			<item> nfunc </item>
+			<item> nfunct </item>
+			<item> nfuncti </item>
+			<item> nfunctio </item>
+			<item> nfunction </item>
+			<item> nfunctions </item>
+			<item> nhide </item>
+			<item> normalize </item>
+			<item> notinparallel </item>
+			<item> np </item>
+			<item> npr </item>
+			<item> npri </item>
+			<item> nprin </item>
+			<item> nprint </item>
+			<item> nskip </item>
+			<item> nt </item>
+			<item> ntable </item>
+			<item> nte </item>
+			<item> nten </item>
+			<item> ntens </item>
+			<item> ntenso </item>
+			<item> ntensor </item>
+			<item> ntensors </item>
+			<item> nunhide </item>
+			<item> nw </item>
+			<item> nwr </item>
+			<item> nwri </item>
+			<item> nwrit </item>
+			<item> nwrite </item>
+			<item> off </item>
+			<item> on </item>
+			<item> once </item>
+			<item> only </item>
+			<item> polyfun </item>
+			<item> polyratfun </item>
+			<item> pophide </item>
+			<item> print </item>
+			<item> printtable </item>
+			<item> propercount </item>
+			<item> pushhide </item>
+			<item> r </item>
+			<item> ratio </item>
+			<item> rc </item>
+			<item> rcy </item>
+			<item> rcyc </item>
+			<item> rcycl </item>
+			<item> rcycle </item>
+			<item> rcycles </item>
+			<item> rcyclesy </item>
+			<item> rcyclesym </item>
+			<item> rcyclesymm </item>
+			<item> rcyclesymme </item>
+			<item> rcyclesymmet </item>
+			<item> rcyclesymmetr </item>
+			<item> rcyclesymmetri </item>
+			<item> rcyclesymmetriz </item>
+			<item> rcyclesymmetrize </item>
+			<item> re </item>
+			<item> red </item>
+			<item> rede </item>
+			<item> redef </item>
+			<item> redefi </item>
+			<item> redefin </item>
+			<item> redefine </item>
+			<item> ren </item>
+			<item> renu </item>
+			<item> renum </item>
+			<item> renumb </item>
+			<item> renumbe </item>
+			<item> renumber </item>
+			<item> repeat </item>
+			<item> replaceloop </item>
+			<item> s </item>
+			<item> sa </item>
+			<item> sav </item>
+			<item> save </item>
+			<item> select </item>
+			<item> set </item>
+			<item> setexitflag </item>
+			<item> shuffle </item>
+			<item> skip </item>
+			<item> slavepatchsize </item>
+			<item> sort </item>
+			<item> splitarg </item>
+			<item> splitfirstarg </item>
+			<item> splitlastarg </item>
+			<item> stuffle </item>
+			<item> sum </item>
+			<item> sy </item>
+			<item> sym </item>
+			<item> symb </item>
+			<item> symbo </item>
+			<item> symbol </item>
+			<item> symbols </item>
+			<item> symm </item>
+			<item> symme </item>
+			<item> symmet </item>
+			<item> symmetr </item>
+			<item> symmetri </item>
+			<item> symmetriz </item>
+			<item> symmetrize </item>
+			<item> t </item>
+			<item> tablebase </item>
+			<item> te </item>
+			<item> ten </item>
+			<item> tens </item>
+			<item> tenso </item>
+			<item> tensor </item>
+			<item> tensors </item>
+			<item> term </item>
+			<item> testuse </item>
+			<item> threadbucketsize </item>
+			<item> totensor </item>
+			<item> tovector </item>
+			<item> trace4 </item>
+			<item> tracen </item>
+			<item> transform </item>
+			<item> tryreplace </item>
+			<item> u </item>
+			<item> unhide </item>
+			<item> uni </item>
+			<item> unit </item>
+			<item> unitt </item>
+			<item> unittr </item>
+			<item> unittra </item>
+			<item> unittrac </item>
+			<item> unittrace </item>
+			<item> v </item>
+			<item> ve </item>
+			<item> vec </item>
+			<item> vect </item>
+			<item> vecto </item>
+			<item> vector </item>
+			<item> vectors </item>
+			<item> w </item>
+			<item> while </item>
+			<item> wr </item>
+			<item> wri </item>
+			<item> writ </item>
+			<item> write </item>
+    </list>
+    
+    <list name="format_options">
+      <item> float </item>
+      <item> rational </item>
+      <item> nospaces </item>
+      <item> spaces </item>
+      <item> fortran </item>
+      <item> doublefortran </item>
+      <item> fortran90 </item>
+      <item> C </item>
+      <item> maple </item>
+      <item> mathematica </item>
+      <item> reduce </item>
+    </list>
+    
+    <!-- Preprocessor directives  -->	    
+    <list name="preprocessors">
+	    <item> #append </item>
+	    <item> #break </item>
+	    <item> #call </item>
+	    <item> #case </item>
+	    <item> #close </item>
+	    <item> #commentchar </item>
+	    <item> #create </item>
+	    <item> #default </item>
+	    <item> #define </item>
+	    <item> #do </item>
+	    <item> #else </item>
+	    <item> #elseif </item>
+	    <item> #enddo </item>
+	    <item> #endif </item>
+	    <item> #endprocedure </item>
+	    <item> #endswitch </item>
+	    <item> #exchange </item>
+	    <item> #if </item>
+	    <item> #ifdef </item>
+	    <item> #ifndef </item>
+	    <item> #include </item>
+	    <item> #message </item>
+	    <item> #pipe </item>
+	    <item> #preout </item>
+	    <item> #procedure </item>
+	    <item> #redefine </item>
+	    <item> #remove </item>
+	    <item> #show </item>
+	    <item> #switch </item>
+	    <item> #system </item>
+	    <item> #terminate </item>
+	    <item> #undefine </item>
+	    <item> #write </item>
+	    <!--        External communication                -->
+    	<item> #external </item>
+	    <item> #toexternal </item>
+	    <item> #fromexternal </item>
+	    <item> #prompt </item>
+    	<item> #setexternal </item>
+	    <item> #rmexternal </item>
+	    <item> #setexternalattr </item>
+    </list>
+    
+    <list name="preprocessor_functions">    
+       <item> maxpowerof </item>
+	     <item> minpowerof </item>
+	     <item> termsin </item>
+    </list>  
+    
+    <list name="condition_functions">    
+      <item> count </item>
+	    <item> match </item>
+	    <item> expression </item>
+	    <item> findloop </item>
+	    <item> multipleof </item>
+    </list>  
+      
+    
+      
+    <list name="module_instructions">
+    	<item> .clear </item>
+	    <item> .global </item>
+	    <item> .store </item>
+    	<item> .end </item>	
+    	<item> .sort </item>	
+    </list>
+    
+    <!-- Build-in functions -->	 
+    <list name="functions">
+	     <item> abs_ </item>
+	     <item> bernoulli_ </item>
+	     <item> binom_ </item>
+	     <item> conjg_ </item>
+	     <item> count_ </item>
+	     <item> d_ </item>
+	     <item> dd_ </item>
+	     <item> delta_ </item>
+	     <item> deltap_ </item>
+	     <item> denom_ </item>
+	     <item> distrib_ </item>
+	     <item> dum_ </item>
+	     <item> dummy_ </item>
+	     <item> dummyten_ </item>
+	     <item> e_ </item>
+	     <item> exp_ </item>
+	     <item> fac_ </item>
+	     <item> firstbracket_ </item>
+	     <item> g5_ </item>
+	     <item> g6_ </item>
+	     <item> g7_ </item>
+	     <item> g_ </item>
+	     <item> gcd_ </item>
+	     <item> gi_ </item>
+	     <item> integer_ </item>
+	     <item> invfac_ </item>
+	     <item> match_ </item>
+	     <item> max_ </item>
+	     <item> maxpow_ </item>
+	     <item> min_ </item>
+	     <item> minpowe_ </item>
+	     <item> mod_ </item>
+	     <item> nargs_ </item>
+	     <item> nterms_ </item>
+	     <item> pattern_ </item>
+	     <item> poly_ </item>
+	     <item> polyadd_ </item>
+	     <item> polydiv_ </item>
+	     <item> polygcd_ </item>
+	     <item> polyintfa_ </item>
+	     <item> polymul_ </item>
+	     <item> polynor_ </item>
+	     <item> polyrem_ </item>
+	     <item> polysub_ </item>
+	     <item> replace_ </item>
+	     <item> reverse_ </item>
+	     <item> root_ </item>
+	     <item> setfun_ </item>
+	     <item> sig_ </item>
+	     <item> sign_ </item>
+	     <item> sum_ </item>
+	     <item> sump_ </item>
+	     <item> table_ </item>
+	     <item> tbl_ </item>
+	     <item> term_ </item>
+	     <item> termsin_ </item>
+	     <item> theta_ </item>
+	     <item> thetap_ </item>
+	     <!-- Extra reserved names	-->
+	     <item> sqrt_ </item>
+	     <item> ln_ </item>
+	     <item> sin_ </item>	 
+	     <item> cos_ </item>
+	     <item> tan_ </item>
+	     <item> asin_ </item>
+	     <item> acos_ </item>
+	     <item> atan_ </item>
+	     <item> atan2_ </item>
+	     <item> sinh_ </item>	 
+	     <item> cosh_ </item>
+	     <item> tanh_ </item>
+	     <item> asinh_ </item>
+	     <item> acosh_ </item>
+	     <item> atanh_ </item>
+	     <item> li2_ </item>
+	     <item> lin_ </item>	    
+    </list>
+    
+    <list name="tablebase_controls">
+    	 <item> enter </item>
+	     <item> create </item>
+	     <item> audit </item>
+	     <item> apply </item>
+	     <item> addto </item>
+	     <item> load </item>
+	     <item> on </item>
+	     <item> off </item>
+	     <item> open </item>
+	     <item> testuse </item>
+	     <item> use </item>
+    </list>
+    
+
+    
+    <contexts>
+      <context attribute="Normal Text" lineEndContext="#stay" name="Normal">
+        <DetectSpaces />
+        <keyword attribute="Operator" context="#stay" String="operators"/>
+        <keyword attribute="Statement" context="#stay" String="statements"  firstNonSpace="true"/>
+        <keyword attribute="Preprocessor" context="#pop" String="preprocessors"  firstNonSpace="true"/>
+        <keyword attribute="Preprocessor function" context="#stay" String="preprocessor_functions"/>
+        <keyword attribute="Condition function" context="#stay" String="condition_functions"/>
+        <RangeDetect attribute="Formal name" context="#stay" char="[" char1="]"/>
+        <keyword attribute="Module instruction" context="#stay" String="module_instructions" firstNonSpace="true"/>
+        <keyword attribute="Function" context="#stay" String="functions"/>
+				<DetectChar attribute="Comment" context="Comment1" char="*" firstNonSpace="true"/>
+				<AnyChar attribute="Operator" String="&amp;)|(,:+-/*^=&lt;&gt;@"/>
+				<Detect2Chars attribute="Operator" context="#stay" char="!" char1="="/>
+				<Detect2Chars attribute="Operator" context="#stay" char="=" char1="="/>
+				<Detect2Chars attribute="Operator" context="#stay" char="&lt;" char1="="/>
+				<Detect2Chars attribute="Operator" context="#stay" char="&gt;" char1="="/>
+				<Detect2Chars attribute="Operator" context="#stay" char="^" char1="%"/>
+				<Detect2Chars attribute="Operator" context="#stay" char="^" char1="/"/>
+				<DetectChar attribute="Formal name" context="Dollar variable" char="$"/>
+				<DetectChar attribute="Regular expression" context="#stay" char="?"/>
+				<RangeDetect attribute="String" context="#stay" char="&quot;" char1="&quot;"/>
+				<!--
+			  <RangeDetect attribute="String" context="#stay" char="`" char1="'"/>			
+				<RangeDetect attribute="String" context="#stay" char="'" char1="'"/>
+			  -->
+			</context>
+
+      <context attribute="Comment" lineEndContext="#pop" name="Comment1">
+      </context>
+      
+      <context attribute="Formal name" lineEndContext="#pop" fallthrough="true" fallthroughContext="Normal" name="Dollar variable">
+      	<RegExpr attribute="Formal name" context="#pop" String="[a-zA-Z0-9]*"/>
+      </context>
+      
+    </contexts>
+    
+    <itemDatas>
+      <itemData name="Normal Text"  defStyleNum="dsNormal"/>
+      <itemData name="Operator"     defStyleNum="dsNormal"/>
+      <itemData name="Statement"    defStyleNum="dsKeyword"/>
+      <itemData name="Preprocessor" defStyleNum="dsOthers" spellChecking="false"/>
+      <itemData name="Preprocessor function"    defStyleNum="dsOthers" spellChecking="false"/>
+      <itemData name="Formal name"  defStyleNum="dsFloat"/>
+      <itemData name="Module instruction" defStyleNum="dsString"/>
+      <itemData name="Function" 		defStyleNum="dsFunction"/>
+      <itemData name="Regular expression"  defStyleNum="dsAlert"/>    
+      <itemData name="Condition function" 		defStyleNum="dsFunction"/>      
+      <itemData name="Comment"      defStyleNum="dsComment"/>
+      <itemData name="String"      defStyleNum="dsDecVal"/>      
+    </itemDatas>
+    
+  </highlighting>
+  
+  <general>
+    <comments>
+      <!-- Comments at the start of line with `*`.	NOTE, this character may be changed in "form.set" file-->
+      <comment name="singleLine" start="*" />
+    </comments>
+    <keywords casesensitive="false" weakDeliminator="."/>
+  </general>
+  
+</language>
